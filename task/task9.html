@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h2>Задача 9. Даны показания температур (произвольное количество). Разработать функцию, которая позволит подсчитать количество отрицательных показателей температуры.</h2>
+	<script>
+		const temperatureReading = parseInt(prompt('Enter temperature reading', '3'))
+		function getNegativTemperatur() {
+			let negativTempIdicators = 0
+			for (let i = 0; i < temperatureReading; i++) {
+				const userIndicatorTemp = parseFloat(prompt('Enter indicators = '))
+				if (userIndicatorTemp < 0) negativTempIdicators = negativTempIdicators + 1
+			}
+			document.write(`Negative indicators were = ${negativTempIdicators}`)
+		} 
+		getNegativTemperatur()
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h2>Задача 5. Створити окремі функції, які переводять: Сантиметри у дюйми; Кілограми у фунти; Кілометри у милі.
+		<script>
+			function getSentimeters(inches) {
+				return inches / 2.54
+			}
+			const inches = parseInt(prompt('Enter santimeter', '1'))
+			const userInchesRes = getSentimeters(inches)
+			document.write(`${inches} santimeter = ${userInchesRes.toFixed(2)} inches<br>`)
+
+			function getKiligramts(pounds) {
+				return pounds / 0.45359237
+			}
+			const pounds = parseInt(prompt('Enter kilograms', '1'))
+			const userPounts = getKiligramts(pounds)
+			document.write(`${pounds} pounts = ${userPounts.toFixed(2)} kilograms<br>`)
+
+			function getKilometers(mile) {
+				return mile * 0.62137
+			}
+			const mile = parseInt(prompt('Kilometers', '1'))
+			const userKilometers = getKilometers(mile)
+			document.write(`${mile} kilometers = ${userKilometers.toFixed(2)} mile<br>`)
+		</script>
+</body>
+
+</html>

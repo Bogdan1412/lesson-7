@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h2>Задача 6. Створити функцію, яка створює таблицю з вказаною кількістю рядків і стовпців (таблиця заповнюється заданим фіксованим повідомленням).</h2>
+	<script>
+		const howMenyColums = parseInt(prompt('How meny colums ?', '1'))
+		const howMenyRows = parseInt(prompt('How meny rows ?', '1'))
+		const wathMessages = prompt('Wath messages?')
+
+		function getShowTable(howMenyColums, howMenyRows) {
+			document.write(`<table border="2px">`)
+				for (let i = 0; i < howMenyColums; i++) {
+					document.write(`<tr>`)
+						for (let j = 0; j < howMenyRows; j++) {
+							document.write(`<td>${wathMessages}</td>`)
+						}
+						document.write(`</tr>`)
+				}
+			document.write(`</table>`)
+		}
+		getShowTable(howMenyColums, howMenyRows)
+	</script>
+</body>
+<!-- <table border="2px">
+	<tr>
+		<td>1</td>
+	</tr>
+</table> -->
+
+</html>

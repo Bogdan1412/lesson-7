@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h2>Задача 3. Створити окремі функції, які для 4 чисел знаходять: 1)суму; 2)добуток; 3)середнє арифметичне; 4)мінімальне значення. </h2>
+	<script>
+		const a = parseInt(prompt('Enter number a =','2'))
+		const b = parseInt(prompt('Enter number b =','2'))
+		const c = parseInt(prompt('Enter number c =','2'))
+		const d = parseInt(prompt('Enter number d =','2'))
+		// let a = 11
+		// let b = 10
+		// let c = 11
+		// let d = 11
+		function getAddition(a, b, c, b) {
+			return a + b + c + d
+		}
+		const addition = getAddition(a, b, c, b)
+		document.write(`Multiply = ${addition} <br>`)
+
+		function getProfit(a, b, c, b) {
+			return a * b * c * d
+		}
+		const profit = getProfit(a, b, c, b)
+		document.write(`Profit = ${profit} <br>`)
+
+		function getArithmeticMean(a, b, c, b) {
+			return (a * b * c * d) / 4
+		}
+		const arithmeticMean = getArithmeticMean(a, b, c, b)
+		document.write(`Arithmetic mean = ${arithmeticMean} <br>`)
+
+		function getMinNumber(a, b, c, b) {
+			return Math.min(a, b, c, d)
+		}
+		const minNum = getMinNumber(a, b, c, b)
+		document.write(`Min number = ${minNum} <br>`)
+	</script>
+</body>
+
+</html>

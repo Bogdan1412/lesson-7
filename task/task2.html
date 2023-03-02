@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h2>Задача 2. Створити функцію, яка за номером дня дозволяє з’ясувати чи є цей день робочим.</h2>
+	<script>
+		function getDayOfWeek(dayWeek) {
+			let resultDay
+			switch (dayWeek) {
+				case 1: resultDay = 'Monday'
+					break;
+				case 2: resultDay = 'Tuesday'
+					break;
+				case 3: resultDay = 'Wednesday'
+					break;
+				case 4: resultDay = 'Tuesday'
+					break;
+				case 5: resultDay = 'Friday'
+					break;
+				case 6: resultDay = 'Saturday'
+					break;
+				case 7: resultDay = 'Sunday'
+					break;
+				default:
+					break;
+			}
+			return resultDay
+		}
+		const dayWeek = parseInt(prompt('Enter the day of the week from (1-7)'))
+		const userDayWeek = getDayOfWeek(dayWeek)
+		document.write(`Day ${dayWeek} = ${userDayWeek}`)
+	</script>
+</body>
+
+</html>

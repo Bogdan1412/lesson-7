@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h2>Задача 10. Даны показания температур (произвольное количество). Разработайте функцию, которая позволит найти среднее значение для положительных показов температуры.</h2>
+	<script>
+		const temperatureReading = parseInt(prompt('Enter temperature readning', '3'))
+
+		function getAverageValue(valueTemp) {
+			let totalPositiveValue = 0
+			let totalAverageValue = 0
+
+			for (let i = 0; i < valueTemp; i++) {
+				const userTemperatur = parseFloat(prompt(`Enter temperatur ${i}`))
+				if (userTemperatur > 0) {
+					totalPositiveValue += userTemperatur
+					totalAverageValue = totalAverageValue + 1
+				}
+			}
+			return totalPositiveValue / totalAverageValue
+		}
+		const userResultat = getAverageValue(temperatureReading)
+		document.write(`Average value for the last temperature was = ${userResultat}`)
+		// document.write(`${getAverageValue(valueTemp)}`)
+
+
+		// const enterQuantityTemperaturs = parseInt(prompt('Введите количество температур для показаний'))
+
+
+		// function getPositiveAvarangeTemperaturs(quantityTemperaturs) {
+		// 	let sumPositiveTemperaturs = 0
+		// 	let quantityPositiveTemperaturs = 0
+
+		// 	for (let i = 0; i < quantityTemperaturs; i++) {
+		// 		const enterTemperaturs = parseFloat(prompt('Введите показания температуры'))
+		// 		if (enterTemperaturs > 0) {
+		// 			sumPositiveTemperaturs += enterTemperaturs
+		// 			quantityPositiveTemperaturs++
+		// 		}
+		// 	}
+
+		// 	return sumPositiveTemperaturs / quantityPositiveTemperaturs
+		// }
+
+		// document.write(`${getPositiveAvarangeTemperaturs(enterQuantityTemperaturs).toFixed('2')}`)
+
+
+
+
+	
+
+
+	</script>
+</body>
+
+</html>
